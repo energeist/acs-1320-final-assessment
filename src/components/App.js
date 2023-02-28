@@ -8,22 +8,25 @@ console.log(data)
 const numBands = data.length
 console.log(numBands)
 const uniqueStyles = []
+let totalFans = 0
 const styleMap = data.map((band) => {
   band.style.split(',').forEach((style) => {
     if (!uniqueStyles.includes(style)) {
       uniqueStyles.push(style)
     }
+  totalFans += parseInt(band.fans)
   })
   return band.style.split(',')
 })
 
 console.log(styleMap)
+console.log(totalFans)
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MetalMeta bands={numBands} styles={uniqueStyles.length}/>
+      <MetalMeta bands={numBands} styles={uniqueStyles.length} fans={totalFans}/>
       <BandList />
     </div>
   );
