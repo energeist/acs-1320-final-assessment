@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import BandCard from './BandCard';
 import './BandList.css';
-import data from './metal.json';
+import data from '../metal.json';
 
 function BandList() {
   const [ query, setQuery ] = useState('');

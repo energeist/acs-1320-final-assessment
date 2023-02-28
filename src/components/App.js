@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Header'
 import MetalMeta from './MetalMeta'
 import BandList from './BandList'
-import data from './metal.json'
+import data from '../metal.json'
 
 console.log(data)
 const numBands = data.length
