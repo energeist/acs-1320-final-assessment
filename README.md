@@ -1,7 +1,7 @@
 # MARK RATTLE
 # ACS-1320 FINAL ASSESSMENT
 
-[https://energeist.github.io/acs-1320-final-assessment/](Hosted on Github Pages)
+[Hosted on Github Pages](https://energeist.github.io/acs-1320-final-assessment/)
 
 ## Available Scripts
 
