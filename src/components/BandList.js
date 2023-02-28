@@ -7,7 +7,10 @@ function BandList() {
   const [ query, setQuery ] = useState('');
   const bands = data.filter((obj) => {
     const inName = obj.band_name.toLowerCase().includes(query.toLowerCase())
-    return inName }).map((
+    const inLocation = obj.origin.toLowerCase().includes(query.toLowerCase())
+    const inStyle = obj.style.toLowerCase().includes(query.toLowerCase())
+    const inFormed = obj.formed.toString().includes(query)
+    return inName || inLocation || inStyle || inFormed }).map((
     { ID, band_name, fans, formed, origin, split, style }) => {
       return (
         <BandCard
@@ -29,7 +32,7 @@ function BandList() {
       <form>
         <input
           value={query}
-          placeholder="search bands"
+          placeholder="search bands, origin locations, styles or formation dates"
           onChange={(evt) => setQuery(evt.target.value)}
         />
       </form>

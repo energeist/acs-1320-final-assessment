@@ -5,8 +5,7 @@ function MetalMeta(props) {
   const {bands, styles} = props
   return (
     <div className="MetalMeta">
-      <p>Number of Bands: {bands}</p>
-      <p>Number of Styles: {styles}</p>
+      <p>This page shows {bands} metal bands that cover {styles} radical styles!</p>
     </div>
   )
 }
