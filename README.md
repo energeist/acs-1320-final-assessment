@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# MARK RATTLE
+# ACS-1320 FINAL ASSESSMENT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[https://energeist.github.io/acs-1320-final-assessment/](Hosted on Github Pages)
 
 ## Available Scripts
 
