@@ -1,7 +1,11 @@
 # MARK RATTLE
 # ACS-1320 FINAL ASSESSMENT
 
-[Hosted on Github Pages](https://energeist.github.io/acs-1320-final-assessment/)
+METAL MAYHEM - YOUR NUMBER ONE SOURCE FOR METAL BAND INFO
+
+[HOSTED IN THE CIRCLE PIT AT GITHUB PAGES](https://energeist.github.io/acs-1320-final-assessment/)
+
+![Animated git of Sesame Street's Elmo worshipping Satan in the fires of Hell](https://media.tenor.com/OVBDpjdhXgUAAAAC/hail-satan-fire.gif)
 
 ## Available Scripts
 
