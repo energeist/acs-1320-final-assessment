@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header'
+import MetalMeta from './MetalMeta'
+import BandList from './BandList'
+import data from './metal.json'
+
+console.log(data)
+const numBands = data.length
+console.log(numBands)
+const uniqueStyles = []
+const styleMap = data.map((band) => {
+  band.style.split(',').forEach((style) => {
+    if (!uniqueStyles.includes(style)) {
+      uniqueStyles.push(style)
+    }
+  })
+  return band.style.split(',')
+})
+
+console.log(styleMap)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <MetalMeta bands={numBands} styles={uniqueStyles.length}/>
+      <BandList />
     </div>
   );
 }

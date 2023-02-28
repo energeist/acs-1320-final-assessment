@@ -1,0 +1,58 @@
+/* src/POPOSList.css */
+.BandList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  width: calc(100% - 80px);
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em 2em 2em 2em;
+  background-color: black;
+}
+
+/* smaller screens and tbalets */
+@media only screen and (max-width: 960px) {
+  .BandList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small screens mobile */
+@media only screen and (max-width: 700px) {
+	.BandList {
+		grid-template-columns: 1fr;
+	}
+	.BandSearch {
+    flex: 1;
+    margin: auto;
+  }
+}
+
+.BandSearch form {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+}
+
+.BandSearch form input, .POPOSSearch form button {
+	padding: 1em;
+	margin: 0;
+	border: 1px solid;
+	font-size: 1rem;
+}
+
+.BandSearch form input {
+  min-width: 100px;
+	margin-left: 2.5em;
+}
+
+.BandSearch form button {
+	margin-right: 2.5em;
+}
+
+.BandSearch form input {
+	flex: 1;
+	/* border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em; */
+}
