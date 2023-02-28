@@ -2,7 +2,7 @@
 .BandList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em;
+  grid-gap: 1em;
   width: calc(100% - 80px);
   max-width: 1200px;
   margin: auto;
@@ -35,7 +35,7 @@
 	align-items: center;
 }
 
-.BandSearch form input, .POPOSSearch form button {
+.BandSearch form input {
 	padding: 1em;
 	margin: 0;
 	border: 1px solid;
@@ -44,15 +44,8 @@
 
 .BandSearch form input {
   min-width: 100px;
-	margin-left: 2.5em;
-}
-
-.BandSearch form button {
-	margin-right: 2.5em;
 }
 
 .BandSearch form input {
 	flex: 1;
-	/* border-top-left-radius: 0.5em;
-	border-bottom-left-radius: 0.5em; */
 }

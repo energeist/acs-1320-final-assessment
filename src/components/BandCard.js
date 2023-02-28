@@ -13,7 +13,7 @@ function BandCard(props) {
         <p>Fans: {(fans*10000).toLocaleString("en-US")}</p>
         <div className='StyleList'>
           <ul>{style.split(',').map((item) => {
-            return <li>{item}</li>
+            return <li key={item}>{item}</li>
           })}</ul>
         </div>
         <div>

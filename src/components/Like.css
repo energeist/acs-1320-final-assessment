@@ -1,5 +1,7 @@
 .Like {
     display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
 }
   
 .Like > h1 {
