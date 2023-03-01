@@ -6,10 +6,10 @@ import data from '../metal.json';
 function BandList() {
   const [ query, setQuery ] = useState('');
   const bands = data.filter((obj) => {
-    const inName = obj.band_name.toLowerCase().includes(query.toLowerCase())
-    const inLocation = obj.origin.toLowerCase().includes(query.toLowerCase())
-    const inStyle = obj.style.toLowerCase().includes(query.toLowerCase())
-    const inFormed = obj.formed.toString().includes(query)
+    const inName = obj.band_name.toLowerCase().includes(query.toLowerCase());
+    const inLocation = obj.origin.toLowerCase().includes(query.toLowerCase());
+    const inStyle = obj.style.toLowerCase().includes(query.toLowerCase());
+    const inFormed = obj.formed.toString().includes(query);
     return inName || inLocation || inStyle || inFormed }).map((
     { ID, band_name, fans, formed, origin, split, style }) => {
       return (
@@ -23,9 +23,9 @@ function BandList() {
           split={ split }
           style={ style }
         />
-      )
+      );
     }
-  )
+  );
 
   return (
     <div className="BandSearch">
@@ -40,7 +40,7 @@ function BandList() {
         { bands.length > 0 ? bands : "No results match your search" } 
       </div>
     </div>
-  )
+  );
 }
 
 export default BandList;

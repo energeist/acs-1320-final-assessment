@@ -1,26 +1,21 @@
 import './App.css';
-import Header from './Header'
-import MetalMeta from './MetalMeta'
-import BandList from './BandList'
-import data from '../metal.json'
+import Header from './Header';
+import MetalMeta from './MetalMeta';
+import BandList from './BandList';
+import data from '../metal.json';
 
-console.log(data)
-const numBands = data.length
-console.log(numBands)
-const uniqueStyles = []
-let totalFans = 0
+const numBands = data.length;
+const uniqueStyles = [];
+let totalFans = 0;
 const styleMap = data.map((band) => {
   band.style.split(',').forEach((style) => {
     if (!uniqueStyles.includes(style)) {
-      uniqueStyles.push(style)
+      uniqueStyles.push(style);
     }
-  totalFans += parseInt(band.fans)
+  totalFans += parseInt(band.fans);
   })
-  return band.style.split(',')
-})
-
-console.log(styleMap)
-console.log(totalFans)
+  return band.style.split(',');
+});
 
 function App() {
   return (

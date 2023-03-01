@@ -1,9 +1,9 @@
 import React from 'react';
 import './BandCard.css';
-import Like from './Like'
+import Like from './Like';
 
 function BandCard(props) {
-  const {id, bandName, fans, formed, origin, split, style} = props
+  const {id, bandName, fans, formed, origin, split, style} = props;
   return (
     <div className='BandCard' key={id}>
       <div>
@@ -23,7 +23,7 @@ function BandCard(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default BandCard;

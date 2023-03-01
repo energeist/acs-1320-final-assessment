@@ -7,7 +7,7 @@ function MetalMeta(props) {
     <div className="MetalMeta">
       <p>This page shows {bands} metal bands that cover {styles} radical styles! {(fans*1000).toLocaleString("en-US")} people worship these bands!</p>
     </div>
-  )
+  );
 }
 
 export default MetalMeta;

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import './Like.css'
+import React, { useState } from 'react';
+import './Like.css';
 
 function Like(props) {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   return (
     <div className="Like">
       <button 
